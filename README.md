@@ -1,5 +1,7 @@
 # HabitGuard
 
+GitHub repository: `habitgurd`.
+
 HabitGuard is a self-contained, local-only browser app. Open `index.html` in a modern browser. Data is saved in that browser's local storage; it is not synchronized, backed up, or protected by an account. Avoid using a shared device for private journal content.
 
 ## Working locally
