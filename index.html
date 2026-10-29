@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f3ef">
+  <meta name="description" content="A thoughtful place to build habits and change patterns, one day at a time.">
+  <title>HabitGuard — A steadier kind of progress</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#dashboard" aria-label="HabitGuard dashboard"><span class="brand-mark">h<span>.</span></span><span>habitguard</span></a>
+      <div class="workspace-label">YOUR SPACE</div>
+      <nav class="nav-list">
+        <a href="#dashboard" data-route="dashboard"><span class="nav-icon">◫</span>Overview</a>
+        <a href="#habits" data-route="habits"><span class="nav-icon">◉</span>My habits</a>
+        <a href="#say-no" data-route="say-no"><span class="nav-icon">◎</span>Say no <span class="nav-dot"></span></a>
+        <a href="#calendar" data-route="calendar"><span class="nav-icon">▦</span>Calendar</a>
+        <a href="#analytics" data-route="analytics"><span class="nav-icon">⌁</span>Insights</a>
+        <a href="#goals" data-route="goals"><span class="nav-icon">↗</span>Goals</a>
+        <a href="#journal" data-route="journal"><span class="nav-icon">▤</span>Journal</a>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <div class="gentle-note"><span class="note-spark">✳</span><p>Progress is a practice,<br>not a perfect streak.</p></div>
+      <a class="settings-link" href="#settings" data-route="settings"><span class="nav-icon">⚙</span>Settings</a>
+      <div class="profile-mini"><div class="avatar">H</div><div><strong id="profile-name">Your space</strong><small>Personal workspace</small></div><span class="more-dots">···</span></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="page-crumb">Overview</strong></div>
+        <div class="topbar-actions"><span class="local-badge"><i></i>Local demo</span><button class="icon-button" id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">◐</button></div>
+      </header>
+      <section id="app" class="page-content" aria-live="polite"></section>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#dashboard" data-route="dashboard"><span>◫</span>Today</a><a href="#habits" data-route="habits"><span>◉</span>Habits</a><a href="#say-no" data-route="say-no"><span>◎</span>Say no</a><a href="#calendar" data-route="calendar"><span>▦</span>Calendar</a><a href="#settings" data-route="settings"><span>⚙</span>More</a>
+      </nav>
+    </main>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <script src="app.js"></script>
+</body>
+</html>
